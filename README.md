@@ -26,8 +26,7 @@ ClassCircle is an academic management app built with Flutter. It aims to help un
 
 ### Installation
 
-
-git clonehttps://github.com/Sulaki0/ClassCircle_app.git
+git clone https://github.com/Sulaki0/ClassCircle_app.git
 
 
 ## 🔑 Test Credentials
