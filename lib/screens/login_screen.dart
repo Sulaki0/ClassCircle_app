@@ -21,13 +21,13 @@ class _LoginScreenState extends State<LoginScreen> {
   String _errorMessage = '';
   bool _obscurePassword = true;
 
-  // ✅ Email validation
+  // Email validation
   bool _isValidEmail(String email) {
     final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     return emailRegex.hasMatch(email);
   }
 
-  // ✅ Password strength check
+  // Password strength check
   bool _isPasswordStrong(String password) {
     final hasMinLength = password.length >= 8;
     final hasUppercase = password.contains(RegExp(r'[A-Z]'));
@@ -82,16 +82,16 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if (!mounted) return;
 
-    // ✅ FIXED: Pass ALL required parameters explicitly
+    // Pass ALL required parameters explicitly
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
         builder: (context) => OtpVerificationScreen(
           userName: userName,
           email: _emailController.text.trim(),
-          studentId: '', // ✅ Empty for login
+          studentId: '', //Empty for login
           purpose: 'login',
-          isNewUser: false, // ✅ Existing user
+          isNewUser: false, //Existing user
           onThemeChanged: widget.onThemeChanged,
         ),
       ),
