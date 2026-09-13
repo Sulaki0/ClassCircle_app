@@ -26,12 +26,14 @@ ClassCircle is an academic management app built with Flutter. It aims to help un
 
 ### Installation
 
-\`\`\`bash
-git clone https://github.com/Sulaki0/ClassCircle_app.git
+bash
+
+git clonehttps://github.com/Sulaki0/ClassCircle_app.git
+
 cd ClassCircle_app
 flutter pub get
 flutter run
-\`\`\`
+
 
 ## 🔑 Test Credentials
 
